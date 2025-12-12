@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Revelação Perdida de Moisés</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Import Map (Must come before any module scripts) -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.2/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+        "react": "https://esm.sh/react@^19.2.2",
+        "react/": "https://esm.sh/react@^19.2.2/"
+      }
+    }
+    </script>
+
+    <!-- Tailwind & Custom Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sacred: {
+                black: '#050505',
+                gold: '#C9A146',
+                goldLight: '#F7DFA0',
+                wine: '#2D0F0F',
+                cream: '#F2E7C9',
+                darkGray: '#121212'
+              }
+            },
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              body: ['Merriweather', 'serif'],
+            },
+            backgroundImage: {
+              'parchment': "url('https://www.transparenttextures.com/patterns/aged-paper.png')",
+              'vignette': 'radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)'
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'like-bounce': 'bounce 0.5s ease-in-out',
+            },
+            keyframes: {
+              glow: {
+                '0%': { boxShadow: '0 0 5px #C9A146' },
+                '100%': { boxShadow: '0 0 20px #C9A146, 0 0 10px #F7DFA0' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #F2E7C9;
+      }
+      .text-shadow-gold {
+        text-shadow: 0 0 10px rgba(201, 161, 70, 0.3);
+      }
+      .torn-paper-top {
+        clip-path: polygon(0% 10px, 5% 0px, 10% 12px, 15% 0px, 20% 10px, 25% 0px, 30% 12px, 35% 0px, 40% 12px, 45% 0px, 50% 12px, 55% 0px, 60% 12px, 65% 0px, 70% 10px, 75% 0px, 80% 12px, 85% 0px, 90% 10px, 95% 0px, 100% 12px, 100% 100%, 0% 100%);
+      }
+      .torn-paper-bottom {
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 12px), 95% 100%, 90% calc(100% - 10px), 85% 100%, 80% calc(100% - 12px), 75% 100%, 70% calc(100% - 10px), 65% 100%, 60% calc(100% - 12px), 55% 100%, 50% calc(100% - 12px), 45% 100%, 40% calc(100% - 10px), 35% 100%, 30% calc(100% - 12px), 25% 100%, 20% calc(100% - 10px), 15% 100%, 10% calc(100% - 12px), 5% 100%, 0% calc(100% - 10px));
+      }
+      wistia-player[media-id='uf8zy7ozj9']:not(:defined) { 
+        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/uf8zy7ozj9/swatch'); 
+        display: block; 
+        filter: blur(5px); 
+        padding-top:61.88%; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Wistia Player Scripts -->
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/uf8zy7ozj9.js" async type="module"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2457099091303416');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2457099091303416&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Vite Entry Point -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
