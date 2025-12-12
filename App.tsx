@@ -606,6 +606,52 @@ const App: React.FC = () => {
         </div>
       </Section>
 
+      {/* SECTION 9.5: TWO PATHS (BEFORE PRICING) */}
+      <Section className="bg-sacred-black border-t border-sacred-gold/10">
+         <div className="max-w-5xl mx-auto">
+            <h2 className="text-center font-serif text-2xl md:text-4xl mb-4 text-sacred-cream">
+              Você está diante de uma <span className="text-white bg-red-900/50 px-2">bifurcação</span>
+            </h2>
+            <p className="text-center text-sacred-cream/60 mb-12">Duas escolhas. Apenas uma leva para o novo capítulo.</p>
+            
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+               {/* Path 1: Heavy */}
+               <div className="bg-[#1a1a1a] border border-white/5 p-8 relative overflow-hidden group hover:bg-[#222] transition-colors">
+                  <div className="absolute inset-0 bg-black/50 z-0"></div>
+                  <div className="relative z-10 opacity-50 group-hover:opacity-70 transition-opacity">
+                     <h3 className="font-serif text-xl mb-4 text-gray-400 uppercase tracking-widest">O Caminho do Peso</h3>
+                     <p className="text-lg leading-relaxed mb-6 font-light">
+                        Entrar em 2026 carregando as mesmas angústias, os mesmos bloqueios e a mesma sensação de estar preso.
+                     </p>
+                     <ul className="space-y-3 text-sm">
+                        <li className="flex items-center gap-2"><Cross size={14} className="rotate-45" /> Portas fechadas</li>
+                        <li className="flex items-center gap-2"><Cross size={14} className="rotate-45" /> Ciclos repetitivos</li>
+                        <li className="flex items-center gap-2"><Cross size={14} className="rotate-45" /> Insegurança espiritual</li>
+                     </ul>
+                  </div>
+               </div>
+
+               {/* Path 2: Light */}
+               <div className="bg-sacred-wine/20 border-2 border-sacred-gold p-8 relative overflow-hidden group shadow-[0_0_30px_rgba(201,161,70,0.15)] transform md:-translate-y-4">
+                  <div className="absolute top-0 right-0 p-4 opacity-20"><Sun size={64} className="text-sacred-gold" /></div>
+                  <div className="relative z-10">
+                     <h3 className="font-serif text-2xl mb-4 text-sacred-gold font-bold uppercase tracking-widest flex items-center gap-2">
+                        O Caminho da Fé <ChevronRight className="animate-pulse" />
+                     </h3>
+                     <p className="text-lg leading-relaxed mb-6 text-sacred-cream">
+                        Dar um passo de fé hoje, usar o Elemento Sagrado e entrar no novo ano com as águas abertas e proteção divina.
+                     </p>
+                     <ul className="space-y-3 text-base text-sacred-goldLight">
+                        <li className="flex items-center gap-2"><BadgeCheck size={18} className="text-sacred-gold" /> Proteção Total</li>
+                        <li className="flex items-center gap-2"><BadgeCheck size={18} className="text-sacred-gold" /> Clareza de Propósito</li>
+                        <li className="flex items-center gap-2"><BadgeCheck size={18} className="text-sacred-gold" /> Benção do Guardião</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </Section>
+
       {/* SECTION 10: PRICING */}
       <Section id="pricing" className="bg-sacred-black">
         <div className="max-w-md mx-auto relative group">
@@ -663,6 +709,52 @@ const App: React.FC = () => {
               </div>
            </div>
         </div>
+      </Section>
+
+      {/* SECTION 10.5: SYMBOLISM (AFTER PRICING) */}
+      <Section className="bg-sacred-black border-t border-sacred-gold/10 pt-0">
+         <div className="max-w-4xl mx-auto">
+            <h2 className="text-center font-serif text-2xl md:text-3xl mb-12 text-sacred-cream">
+              Por que <span className="text-sacred-gold">R$ 21,00?</span>
+            </h2>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 relative">
+               {/* Connecting Line for Mobile */}
+               <div className="absolute inset-y-0 left-1/2 w-0.5 bg-sacred-gold/20 -translate-x-1/2 md:hidden"></div>
+               {/* Connecting Line for Desktop */}
+               <div className="absolute inset-x-0 top-1/2 h-0.5 bg-sacred-gold/20 -translate-y-1/2 hidden md:block"></div>
+
+               {/* Box 14 */}
+               <div className="relative z-10 bg-sacred-black p-4 rounded-full border border-sacred-gold/30 w-32 h-32 flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(201,161,70,0.1)]">
+                  <span className="text-3xl font-serif text-sacred-gold font-bold">14</span>
+                  <p className="text-xs text-sacred-cream/70 mt-1 uppercase tracking-wide">Êxodo 14<br/>(A Travessia)</p>
+               </div>
+
+               {/* Plus Symbol */}
+               <div className="relative z-10 bg-sacred-wine w-8 h-8 rounded-full flex items-center justify-center text-sacred-gold font-bold border border-sacred-gold">
+                  +
+               </div>
+
+               {/* Box 7 */}
+               <div className="relative z-10 bg-sacred-black p-4 rounded-full border border-sacred-gold/30 w-32 h-32 flex flex-col items-center justify-center text-center shadow-[0_0_20px_rgba(201,161,70,0.1)]">
+                  <span className="text-3xl font-serif text-sacred-gold font-bold">7</span>
+                  <p className="text-xs text-sacred-cream/70 mt-1 uppercase tracking-wide">Perfeição<br/>(Ciclo Divino)</p>
+               </div>
+
+               {/* Equals Symbol */}
+               <div className="relative z-10 bg-sacred-wine w-8 h-8 rounded-full flex items-center justify-center text-sacred-gold font-bold border border-sacred-gold">
+                  =
+               </div>
+
+               {/* Box 21 */}
+               <div className="relative z-10 bg-sacred-gold/10 p-4 rounded-full border-2 border-sacred-gold w-40 h-40 flex flex-col items-center justify-center text-center shadow-[0_0_30px_rgba(201,161,70,0.3)] scale-110">
+                  <span className="text-5xl font-serif text-sacred-gold font-black text-shadow-gold">21</span>
+                  <p className="text-xs text-sacred-cream mt-1 font-bold uppercase tracking-widest">Travessia<br/>Perfeita</p>
+               </div>
+            </div>
+            <p className="text-center mt-10 text-sm md:text-base opacity-70 max-w-xl mx-auto italic font-serif leading-relaxed">
+               "Não é compra de milagre. É o valor simbólico sagrado para manter esta obra protegida e acessível."
+            </p>
+         </div>
       </Section>
 
       {/* NEW SECTION: BOTTOM TESTIMONIALS */}
