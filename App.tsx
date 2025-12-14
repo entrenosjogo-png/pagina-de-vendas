@@ -288,12 +288,12 @@ const App: React.FC = () => {
         </div>
 
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight md:leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-b from-sacred-goldLight via-sacred-gold to-neutral-600 text-shadow-gold max-w-5xl mx-auto">
-          A Revelação Perdida de Moisés: O Elemento Sagrado que abre caminhos impossíveis para 2026, foi liberada agora!
+          Se você tem fé, mas sente que tudo está travado, isso aqui não chegou até você por acaso.
         </h1>
 
         {/* Clean Sub-headline */}
         <p className="font-body text-lg md:text-xl text-sacred-cream/80 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-          A instrução preservada por séculos, usada por Moisés no momento de travessia, agora revelada ao povo que busca proteção, direção e uma verdadeira virada espiritual antes da chegada de 2026.
+          A instrução espiritual que Moisés usou para vencer escassez e bloqueios, preservada por séculos, agora revelada para ativar proteção, direção e bênçãos sobre o que você pedia em silêncio, antes que 2026 comece.
         </p>
 
         {/* Video VSL Warning Message */}
@@ -313,7 +313,7 @@ const App: React.FC = () => {
         <div className="w-full max-w-4xl mx-auto mb-16 shadow-[0_0_40px_rgba(201,161,70,0.25)] rounded-lg overflow-hidden border border-sacred-gold/30 bg-black relative z-10 group">
             <div className="absolute -inset-1 bg-sacred-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             {/* @ts-ignore */}
-            <wistia-player media-id="uf8zy7ozj9" aspect="1.6161616161616161"></wistia-player>
+            <wistia-player media-id="hrn6oiumch" aspect="1.7204301075268817"></wistia-player>
         </div>
 
         {/* Testimonials Carousel (Restored Visuals) */}
